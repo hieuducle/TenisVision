@@ -5,7 +5,7 @@ import cv2
 model = YOLO("/home/amin/PycharmProjects/PythonProject/TableTenisVision/runs/detect/train/weights/best.pt")
 
 # Load video
-cap = cv2.VideoCapture('mel.mp4')
+cap = cv2.VideoCapture('data/mel.mp4')
 
 # Check if video opened successfully
 if not cap.isOpened():

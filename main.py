@@ -70,9 +70,9 @@ def draw_minimap(frame, track_positions_main_player, scale_x, scale_y,court,mini
     frame[100:100+ minimap_size[1], -minimap_size[0]-20:-20] = minimap
     return frame
 if __name__ == '__main__':
-    model = YOLO('yolov8s.pt')
+    model = YOLO('data/yolov8s.pt')
 
-    cap = cv2.VideoCapture('mel.mp4')
+    cap = cv2.VideoCapture('data/mel.mp4')
     fps = cap.get(cv2.CAP_PROP_FPS)
     frame_width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
     frame_height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
